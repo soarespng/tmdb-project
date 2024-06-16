@@ -1,0 +1,67 @@
+/* Movie.css */
+
+/* Container principal */
+.movie-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #fff;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Cabeçalho do filme */
+.movie-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Informações do filme */
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Título do filme */
+.movie-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Tagline do filme */
+.movie-tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+/* Runtime do filme */
+.movie-runtime {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.movie-runtime svg {
+    margin-right: 0.5rem;
+    color: #ffcc00;
+}
+
+/* Sinopse do filme */
+.movie-overview {
+    margin-top: 2rem;
+}
+
+.movie-overview h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.movie-overview p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
