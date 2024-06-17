@@ -21,7 +21,7 @@ const Movie = () => {
         const data = await response.json();
         setMovie(data);
     };
-    
+
     const getSimilar = async (url) => {
         const response = await fetch(url);
         const data = await response.json();
@@ -39,36 +39,38 @@ const Movie = () => {
     }, [id]);
 
     return (
-        <div className="movie-container">
-            {movie && (
-                <>
-                    <div className="movie-header">
-                        <img src={imageUrl + movie.poster_path} alt={movie.title} />
-                        <div className="movie-info">
-                            <h1 className="movie-title">{movie.title}</h1>
-                            <p className="movie-tagline">{movie.tagline}</p>
-                            <p className="movie-runtime">
-                                <BsHourglassSplit /> {movie.runtime} minutos
-                            </p>
-                            <br/>
-                            <h2 className="movie-title">Sinopse</h2>
-                            <p>{movie.overview}</p>
+        <div className="movie-page">
+            <div className="movie-container">
+                {movie && (
+                    <>
+                        <div className="movie-header">
+                            <img src={imageUrl + movie.poster_path} alt={movie.title} />
+                            <div className="movie-info">
+                                <h1 className="movie-title">{movie.title}</h1>
+                                <p className="movie-tagline">{movie.tagline}</p>
+                                <p className="movie-runtime">
+                                    <BsHourglassSplit /> {movie.runtime} minutos
+                                </p>
+                                <br />
+                                <h2 className="movie-title">Sinopse</h2>
+                                <p>{movie.overview}</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="similar-movies">
-                        <h2 className="movie-title">Titulos similares:</h2>
-                        {similar.length > 0 && (
-                            <Swiper spaceBetween={5} slidesPerView={3}>
-                            {similar.map((similarMovie) => (
-                                <SwiperSlide key={similarMovie.id}>
-                                <MovieCard movie={similarMovie} />
-                                </SwiperSlide>
-                            ))}
-                            </Swiper>
-                        )}
-                    </div>
-                </>
-            )}
+                        <div className="similar-movies">
+                            <h2 className="movie-title">Titulos similares:</h2>
+                            {similar.length > 0 && (
+                                <Swiper spaceBetween={5} slidesPerView={3}>
+                                    {similar.map((similarMovie) => (
+                                        <SwiperSlide key={similarMovie.id}>
+                                            <MovieCard movie={similarMovie} />
+                                        </SwiperSlide>
+                                    ))}
+                                </Swiper>
+                            )}
+                        </div>
+                    </>
+                )}
+            </div>
         </div>
     );
 };

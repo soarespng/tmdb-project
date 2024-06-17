@@ -1,16 +1,18 @@
+/* GridMovies.css */
+
 /* Estilo base */
-.container .title {
+.gridmovies-page .container .title {
     color: white;
     font-size: 2.5rem;
     text-align: center;
     margin: 2rem 0 1rem;
 }
 
-.title .query-text {
+.gridmovies-page .title .query-text {
     color: aqua;
 }
 
-.movies-container {
+.gridmovies-page .movies-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -19,7 +21,7 @@
     max-width: 1200px;
 }
 
-.movie-card {
+.gridmovies-page .movie-card {
     width: 25%;
     color: white;
     margin-bottom: 2rem;
@@ -30,24 +32,24 @@
     border-radius: 5px;
 }
 
-.text-card {
+.gridmovies-page .text-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.text-card p svg {
+.gridmovies-page .text-card p svg {
     color: yellow;
 }
 
-.details-container {
+.gridmovies-page .details-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 1rem; /* Espaço entre o título e o contêiner de detalhes */
+    margin-top: 1rem;
 }
 
-.text-card a {
+.gridmovies-page .text-card a {
     background-color: black;
     border: 2px solid;
     border-radius: 5px;
@@ -55,63 +57,59 @@
     text-align: center;
 }
 
-.movie-card img {
+.gridmovies-page .movie-card img {
     max-width: 100%;
     margin-bottom: 1rem;
     border-radius: 15px;
 }
 
-/* Media query para telas menores que 1200px */
 @media (max-width: 1200px) {
-    .movies-container {
+    .gridmovies-page .movies-container {
         max-width: 1000px;
     }
 
-    .movie-card {
+    .gridmovies-page .movie-card {
         width: 45%;
     }
 }
 
-/* Media query para telas menores que 992px */
 @media (max-width: 992px) {
-    .movies-container {
+    .gridmovies-page .movies-container {
         max-width: 800px;
     }
 
-    .movie-card {
+    .gridmovies-page .movie-card {
         width: 48%;
     }
 }
 
-/* Media query para telas menores que 768px */
 @media (max-width: 768px) {
-    .container .title {
+    .gridmovies-page .container .title {
         font-size: 2rem;
         margin: 1.5rem 0 1rem;
     }
 
-    .movies-container {
+    .gridmovies-page .movies-container {
         max-width: 600px;
     }
 
-    .movie-card {
-        width: 48%;
+    .gridmovies-page .movie-card {
+        width: 50%;
     }
 }
 
-/* Media query para telas menores que 576px */
 @media (max-width: 576px) {
-    .container .title {
+    .gridmovies-page .container .title {
         font-size: 1.5rem;
         margin: 1rem 0 0.5rem;
     }
 
-    .movies-container {
+    .gridmovies-page .movies-container {
         max-width: 100%;
         padding: 0.5rem;
     }
 
-    .movie-card {
+    .gridmovies-page .movie-card {
         width: 45%;
         margin-bottom: 1rem;
     }
