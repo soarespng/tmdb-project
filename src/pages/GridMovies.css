@@ -20,13 +20,12 @@
 }
 
 .movie-card {
-    width: 22%;
+    width: 25%;
     color: white;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: gray;
     padding: 1rem;
     border-radius: 5px;
 }
@@ -34,7 +33,6 @@
 .text-card {
     display: flex;
     flex-direction: column;
-    height: 100%;
     justify-content: space-between;
 }
 
@@ -59,10 +57,8 @@
 
 .movie-card img {
     max-width: 100%;
-}
-
-.movie-card img {
     margin-bottom: 1rem;
+    border-radius: 15px;
 }
 
 /* Media query para telas menores que 1200px */
