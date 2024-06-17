@@ -58,7 +58,7 @@ const Movie = () => {
                     <div className="similar-movies">
                         <h2 className="movie-title">Titulos similares:</h2>
                         {similar.length > 0 && (
-                            <Swiper spaceBetween={5} slidesPerView={5}>
+                            <Swiper spaceBetween={5} slidesPerView={3}>
                             {similar.map((similarMovie) => (
                                 <SwiperSlide key={similarMovie.id}>
                                 <MovieCard movie={similarMovie} />
