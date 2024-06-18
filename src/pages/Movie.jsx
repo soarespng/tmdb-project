@@ -96,14 +96,16 @@ const Movie = () => {
                                     <BsCollection /> Gêneros: {movie.genres.map((genre) => genre.name).join(", ")}
                                 </p>
                                 <br />
-                                <h2 className="movie-title">Streamings:</h2>
-                                <div className="providers-list">
-                                    {providers && providers.map((provider) => (
-                                        <div key={provider.provider_id} className="provider-item">
-                                            <p>{provider.provider_name}</p>
-                                        </div>
-                                    ))}
-                                </div>
+                                {providers.length > 0 && <>
+                                    <h2 className="movie-title">Streamings:</h2>
+                                    <div className="providers-list">
+                                        {providers.map((provider) => (
+                                            <div key={provider.provider_id} className="provider-item">
+                                                <p>{provider.provider_name}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </>}
                                 <br />
                                 <h2 className="movie-title">Sinopse:</h2>
                                 <p>{movie.overview}</p>
