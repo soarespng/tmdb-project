@@ -90,7 +90,7 @@ const Movie = () => {
                                     <BsStar /> Nota: {movie.vote_average.toFixed(1)}
                                 </p>
                                 <p className="movie-runtime">
-                                    <BsCalendar /> Data de lançamento: {movie.release_date}
+                                    <BsCalendar /> Ano: {new Date(movie.release_date).getFullYear()}
                                 </p>
                                 <p className="movie-runtime">
                                     <BsCollection /> Gêneros: {movie.genres.map((genre) => genre.name).join(", ")}
