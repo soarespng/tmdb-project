@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MoviesGrid from "../components/MoviesGrid";
 import Menus from "../components/Menus"; // Certifique-se de importar o componente Menus
+import SeriesGrid from "../components/SeriesGrid";
 
 const Home = () => {
     const [selectedSection, setSelectedSection] = useState("discover");
@@ -9,7 +10,7 @@ const Home = () => {
         <div className="gridmovies-page">
             <Menus selectedSection={selectedSection} setSelectedSection={setSelectedSection} />
             {selectedSection === "filmes" && <MoviesGrid />}
-            {/* Você pode adicionar mais renderizações condicionais aqui para outras seções */}
+            {selectedSection === "series" && <SeriesGrid />}
         </div>
     );
 };

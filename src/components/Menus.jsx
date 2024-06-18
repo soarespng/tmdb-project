@@ -9,7 +9,7 @@ const Menus = ({ selectedSection, setSelectedSection }) => {
                     className={selectedSection === "discover" ? "selected" : ""} 
                     onClick={() => setSelectedSection("discover")}
                 >
-                    Discover
+                    Explorar
                 </li>
                 <li 
                     className={selectedSection === "filmes" ? "selected" : ""} 

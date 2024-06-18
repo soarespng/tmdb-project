@@ -1,7 +1,7 @@
 /* Estilos para o componente Navbar */
 .navbar {
     background-color: #141414; /* Fundo escuro para combinar com o menu */
-    padding: 10px 0; /* Padding vertical */
+    padding: 1.5rem 0rem 0.5rem 0rem;
     display: flex;
     justify-content: center; /* Centralizar conteúdo */
 }

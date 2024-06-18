@@ -5,7 +5,7 @@ import 'swiper/css';
 
 const MovieSection = ({ title, movies, loading, error }) => (
     <div className="container">
-        {/* <h2 className="title">{title}</h2> */}
+        <h2 className="title">{title}</h2>
         <div className="movies-container">
             {loading && <p>Carregando...</p>}
             {error && <p>Erro ao carregar filmes.</p>}
