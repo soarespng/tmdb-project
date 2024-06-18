@@ -9,7 +9,7 @@
 }
 
 .gridmovies-page .title .query-text {
-    color: aqua;
+    font-size: 30px;
 }
 
 .gridmovies-page .movies-container {
@@ -22,7 +22,6 @@
 }
 
 .gridmovies-page .movie-card {
-    width: 25%;
     color: white;
     margin-bottom: 2rem;
     display: flex;
@@ -94,14 +93,14 @@
     }
 
     .gridmovies-page .movie-card {
-        width: 50%;
+        width: 100%;
     }
 }
 
 @media (max-width: 576px) {
     .gridmovies-page .container .title {
         font-size: 1.5rem;
-        margin: 1rem 0 0.5rem;
+        margin: 1rem 1.5rem 0.5rem;
     }
 
     .gridmovies-page .movies-container {
@@ -110,7 +109,7 @@
     }
 
     .gridmovies-page .movie-card {
-        width: 45%;
+        width: 100%;
         margin-bottom: 1rem;
     }
 }
