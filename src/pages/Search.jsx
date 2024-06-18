@@ -4,7 +4,7 @@ import { useSearchParams } from "react-router-dom"
 const searchURL = import.meta.env.VITE_SEARCH
 const apiKey = import.meta.env.VITE_API_KEY
 
-import "./GridMovies.css"
+import "../styles/GridMovies.css"
 import MovieCard from "../components/MovieCard"
 
 const Search = () => {

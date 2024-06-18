@@ -1,0 +1,31 @@
+.sub-navbar {
+    background-color: #141414; /* Fundo escuro como o da Netflix */
+    padding: 10px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Centralizar o menu horizontalmente */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #ffffff; /* Texto branco */
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.menu li:hover {
+    color: #b3b3b3; /* Texto ligeiramente mais claro ao passar o mouse */
+}
+
+.menu .selected {
+    color: #e50914; /* Cor do texto vermelho Netflix para a seção selecionada */
+    border-bottom: 2px solid #e50914; /* Linha inferior para a seção selecionada */
+}

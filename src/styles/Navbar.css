@@ -1,17 +1,17 @@
-#navbar {
+/* Estilos para o componente Navbar */
+.navbar {
+    background-color: #141414; /* Fundo escuro para combinar com o menu */
+    padding: 10px 0; /* Padding vertical */
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: fit-content;
-    margin-bottom: 3vh;
+    justify-content: center; /* Centralizar conteúdo */
 }
 
-#navbar form {
-    margin-top: 2rem;
+.search-form {
     display: flex;
-    gap: .5rem;
+    justify-content: center;
     width: 60%;
+    max-width: 600px; /* Limitar a largura máxima */
+    margin: 0 auto;
 }
 
 .input-container {
@@ -19,16 +19,12 @@
     width: 100%;
 }
 
-#navbar input {
-    padding: 0.5rem .8rem 0.5rem 1.5rem;
-    padding-right: 2.5rem;
+.search-input {
+    padding: 0.7rem 0.8rem 0.7rem 1.5rem;
     border: none;
     width: 100%;
-    border-radius: 25px;
-    box-sizing: border-box;
-    font-family: inherit;
-    font-size: 20px;
-    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
     background-color: #444;
     color: #ffffff;
 }
@@ -52,15 +48,7 @@
     width: 2.5rem;
 }
 
-#navbar .search-icon {
+.search-icon {
     pointer-events: none;
-    font-size: 15px;
-}
-
-#navbar form button {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }

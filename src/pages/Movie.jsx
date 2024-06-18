@@ -4,7 +4,7 @@ import { BsHourglassSplit, BsStar, BsCalendar, BsCollection } from "react-icons/
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import MovieCard from "../components/MovieCard";
-import "./Movie.css";
+import "../styles/Movie.css";
 
 const imageUrl = import.meta.env.VITE_IMG;
 const logoImageUrl = import.meta.env.VITE_IMG_LOGO;
