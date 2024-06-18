@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import MovieCard from "../components/MovieCard";
 import "../styles/Movie.css";
+import MovieSection from "../components/MovieSection";
 
 const imageUrl = import.meta.env.VITE_IMG;
 const logoImageUrl = import.meta.env.VITE_IMG_LOGO;
@@ -30,23 +31,6 @@ const fetchData = async (url, setter, setLoading, setError) => {
         setLoading(false);
     }
 };
-
-const MovieSection = ({ title, movies, loading, error }) => (
-    <div className="similar-movies">
-        <h2 className="movie-title">{title}</h2>
-        {loading && <p>Carregando...</p>}
-        {error && <p>Erro ao carregar filmes.</p>}
-        {!loading && !error && movies.length > 0 && (
-            <Swiper spaceBetween={5} slidesPerView={3}>
-                {movies.map((movie) => (
-                    <SwiperSlide key={movie.id}>
-                        <MovieCard movie={movie} />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-        )}
-    </div>
-);
 
 const Movie = () => {
     const { id } = useParams();

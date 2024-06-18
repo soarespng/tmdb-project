@@ -1,6 +1,7 @@
 .sub-navbar {
     background-color: #141414; /* Fundo escuro como o da Netflix */
     padding: 10px 0;
+    margin-bottom: 1rem;
 }
 
 .menu {

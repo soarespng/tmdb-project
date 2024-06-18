@@ -1,6 +1,3 @@
-/* Movie.css */
-
-/* Container principal */
 .movie-page .movie-container {
     width: 80%;
     margin: 0 auto;
@@ -31,8 +28,10 @@
 
 /* Título do filme */
 .movie-page .movie-title {
-    font-size: 1.8rem;
     margin-bottom: 1rem;
+    white-space: nowrap;      /* Não permite quebra de linha */
+    overflow: hidden;         /* Esconde o texto que ultrapassa o limite do contêiner */
+    text-overflow: ellipsis;
 }
 
 /* Tagline do filme */
@@ -79,7 +78,9 @@
 
 @media (max-width: 768px) {
     .movie-page .movie-title {
-        font-size: 1.4rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .movie-page .movie-info {
@@ -109,7 +110,7 @@
 
     .movie-page .movie-container {
         margin: 0 auto;
-        padding: 0rem 1.5rem 2rem 1.5rem;
+        padding: 1rem 1.5rem 2rem 1.5rem;
         color: #fff;
         background-color: black;
         width: 100%;
